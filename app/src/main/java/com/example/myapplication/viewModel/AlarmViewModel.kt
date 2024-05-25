@@ -12,7 +12,7 @@ class AlarmViewModel(private val alarmManagerUtil: AlarmUtils) : ViewModel() {
     private val _alarms = MutableLiveData<List<AlarmModel>>(emptyList())
     val alarms: LiveData<List<AlarmModel>> = _alarms
     private val _showToast = MutableLiveData<String>()
-    val showToastEvent: LiveData<String> get() = _showToast
+    val showToastEvent: LiveData<String> = _showToast
 
     private fun showToast(message: String) {
         _showToast.value = message
