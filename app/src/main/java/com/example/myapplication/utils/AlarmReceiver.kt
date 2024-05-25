@@ -46,7 +46,6 @@ class AlarmReceiver : BroadcastReceiver() {
             mChannel.description = description
             mChannel.enableLights(true)
             mChannel.lightColor = Color.RED
-
             mChannel.enableVibration(true)
             mChannel.vibrationPattern =
                 longArrayOf(100, 200, 300, 400, 500, 400, 300, 200, 400)
